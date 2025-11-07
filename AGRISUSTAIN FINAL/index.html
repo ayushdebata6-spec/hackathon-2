@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n-key="app.title">AGRISUSTAIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <div class="wrap">
+        <header>
+            <div class="logo" aria-hidden="true">
+                <svg class="maple" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Maple leaf logo">
+                    <defs>
+                        <linearGradient id="mg" x1="0" x2="1" y1="0" y2="1">
+                            <stop offset="0" stop-color="#22c55e"/>
+                            <stop offset="1" stop-color="#15803d" />
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#mg)" d="M32 6c2 4 8 8 12 10 0 0-1 2 0 4 2 2 5 8 5 12 0 0-6-2-10 0-4 2-7 7-9 10 0 0-2-6-5-8-3-2-10-2-14 0-4 2-5 6-5 6s3-6 6-10c3-4 6-6 6-10 0 0-2-2-2-4s8-4 12-10z"/>
+                </svg>
+            </div>
+            <div style="flex:1">
+                <h1 class="text-2xl font-bold">AGRISUSTAIN</h1>
+                <p class="lead" data-i18n-key="app.tagline">Empowering farmers with sustainable practices & AI-driven insights</p>
+            </div>
+            
+            <div class="settings-toggle">
+                <label for="themeSwitch" class="icon-label">🌗</label>
+                <select id="themeSwitch" class="p-2 border rounded-md shadow-sm">
+                    <option value="dark" data-i18n-key="theme.dark">Dark</option>
+                    <option value="light" data-i18n-key="theme.light">Light</option>
+                </select>
+
+                <label for="language-select" class="icon-label">🌐</label>
+                <select id="language-select" class="p-2 border rounded-md shadow-sm">
+                    <option value="en" data-i18n-key="lang.en">English (EN)</option>
+                    <option value="hi" data-i18n-key="lang.hi">Hindi (HI)</option>
+                    <option value="or" data-i18n-key="lang.or">Odia (OR)</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <section id="main-content">
+                <div class="card intro">
+                    <div class="intro-inner">
+                        <div>
+                            <h2 class="text-xl font-semibold" data-i18n-key="section.title.simplified_farming">Sustainable farming, simplified</h2>
+                            <p class="small text-sm text-gray-600 mt-1" data-i18n-key="section.subtitle.yield_resilience">Use season + soil suggestions and practical methods to improve yield and resilience</p>
+                        </div>
+                        <div class="badge" data-i18n-key="badge.eco_first">Eco-first</div>
+                    </div>
+
+                    <div class="chips flex flex-wrap gap-2 mt-3">
+                        <span class="chip" data-i18n-key="chip.low_water">Low water use</span>
+                        <span class="chip" data-i18n-key="chip.soil_health">Soil health</span>
+                        <span class="chip" data-i18n-key="chip.agroforestry">Agroforestry</span>
+                        <span class="chip" data-i18n-key="chip.diversification">Diversification</span>
+                    </div>
+                </div>
+                
+                <div class="card methods mt-3">
+                    <h3 class="text-lg font-semibold border-b pb-2 mb-3" data-i18n-key="section.title.sustainable_methods">Sustainable methods</h3>
+                    <div class="grid-2 mt-3">
+                        
+                        <div class="method">
+                            <h4 data-i18n-key="method.crop_rotation.title">Crop rotation</h4>
+                            <p data-i18n-key="method.crop_rotation.desc">Reduce pests, restore nutrients, and break disease cycles by rotating crop families each season.</p>
+                            <div class="learn-more mt-2">
+                                🔗 <a href="https://youtu.be/XeNA6XdMoF8?si=ut_uMfc7qu8cXYmb" target="_blank">Watch on YouTube</a><br>
+                                🌐 <a href="https://www.britannica.com/topic/crop-rotation" target="_blank" data-i18n-key="link.learn_more_general">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="method">
+                            <h4 data-i18n-key="method.water_conservation.title">Water conservation</h4>
+                            <p data-i18n-key="method.water_conservation.desc">Capture and use water efficiently with contour bunding, microcatchments, drip irrigation, and mulching to reduce evaporation.</p>
+                            <div class="learn-more mt-2">
+                                🔗 <a href="https://youtu.be/-evivoRwUZw?si=PYod09w3Sq3Hs2oj" target="_blank">Watch on YouTube</a><br>
+                                🌐 <a href="http://www.farmers.gov/conservation" target="_blank" data-i18n-key="link.learn_more_general">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="method">
+                            <h4 data-i18n-key="method.agroforestry.title">Agroforestry</h4>
+                            <p data-i18n-key="method.agroforestry.desc">Integrate trees with crops to provide shade, windbreaks, improved biodiversity, and carbon capture.</p>
+                            <div class="learn-more mt-2">
+                                🔗 <a href="https://youtu.be/rzImtlqjdxo?si=LmkiHmEapdcYrSAr" target="_blank">Watch on YouTube</a><br>
+                                🌐 <a href="https://www.britannica.com/science/agroforestry" target="_blank" data-i18n-key="link.learn_more_general">Learn more</a>
+                            </div>
+                        </div>
+
+                        <div class="method">
+                            <h4 data-i18n-key="method.renewable_energy.title">Renewable energy use</h4>
+                            <p data-i18n-key="method.renewable_energy.desc">Adopt small-scale solar pumps, biogas, and solar cold storage to lower fuel costs and increase resilience.</p>
+                            <div class="learn-more mt-2">
+                                🔗 <a href="https://youtu.be/1kUE0BZtTRc?si=0HlDMWIgEfbotq9m" target="_blank">Watch on YouTube</a><br>
+                                🌐 <a href="https://www.ucs.org/resources/renewable-energy-and-agriculture" target="_blank" data-i18n-key="link.learn_more_general">Learn more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <h3 class="text-lg font-semibold border-b pb-2 mb-3" data-i18n-key="section.title.crop_suggestion">CROP SUGGESTION</h3>
+                    <div class="selector">
+                        <div class="flex flex-col sm:flex-row sm:space-x-4">
+                            <div class="flex-1">
+                                <label for="season" data-i18n-key="label.choose_season">Choose season</label>
+                                <select id="season">
+                                    <option value="summer" data-i18n-key="option.summer">Summer</option>
+                                    <option value="monsoon" data-i18n-key="option.monsoon">Monsoon</option>
+                                    <option value="winter" data-i18n-key="option.winter">Winter</option>
+                                </select>
+                            </div>
+
+                            <div class="flex-1">
+                                <label for="soil" data-i18n-key="label.choose_soil">Choose soil</label>
+                                <select id="soil">
+                                    <option value="sandy" data-i18n-key="option.sandy">Sandy</option>
+                                    <option value="loamy" data-i18n-key="option.loamy">Loamy</option>
+                                    <option value="clay" data-i18n-key="option.clay">Clay</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="actions mt-3">
+                            <button class="btn" id="run" data-i18n-key="button.get_recommendations">Get Recommendations</button>
+                            <div class="helper text-sm ml-2" data-i18n-key="helper.quick_guidance">Quick, practical guidance</div>
+                        </div>
+
+                        <div class="result mt-4" id="result">
+                            <strong data-i18n-key="result.placeholder">Suggestions will appear here after you choose season & soil.</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <aside class="chat-wrap">
+                <div class="card chatbox h-full">
+                    <div class="chat-head">
+                        <h3 class="text-lg font-semibold" data-i18n-key="chat.title">Farm Assist Chat</h3>
+                    </div>
+                    <div class="messages" id="messages" aria-live="polite">
+                        </div>
+                    <div class="compose">
+                        <input id="userInput" placeholder="Ask a question..." aria-label="chat input" />
+                        <button class="btn" id="send" data-i18n-key="button.send">Send</button>
+                    </div>
+                    <div class="feedback mt-2">
+                        <span data-i18n-key="chat.feedback_prompt">Was this helpful?</span>
+                        <button class="btn btn-icon" id="thumbsUp">👍</button>
+                        <button class="btn btn-icon" id="thumbsDown">👎</button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        
+        <footer class="text-center text-sm text-gray-500 mt-4">
+            <p data-i18n-key="footer.disclaimer">AGRISUSTAIN — Prototype for sustainable agriculture guidance. Built for hackathon demos.</p>
+            <p data-i18n-key="footer.copyright"> HELP LINE:- 696969</p>
+            <p data-i18n-key="footer.copyright">Copyright © AGRISUSTAIN BY COMPLEX CODERS</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
